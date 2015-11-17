@@ -1,0 +1,128 @@
+#tracks {
+	background: -webkit-linear-gradient(#000630, #00041F);
+	background: -o-linear-gradient(#000630, #00041F);
+	background: -moz-linear-gradient(#000630, #00041F);
+	background-repeat: no-repeat;
+	padding-right: auto;
+	padding-left: auto;
+
+}
+
+body {
+	background: -webkit-linear-gradient(#000630, #00041F);
+	background: -o-linear-gradient(#000630, #00041F);
+	background: -moz-linear-gradient(#000630, #00041F);
+	background-repeat: no-repeat;
+}
+
+.fullSize {
+	height: 100%;
+	width: 100%;
+}
+
+form {
+	padding: 0px;
+	z-index: 9999;
+}
+
+.form {
+	background-image: url(img/background2.png);
+	background-size: cover;
+	padding: 50px;
+	height: 100%;
+	width: 100%;
+	margin: 0px;
+	-webkit-animation:fadeIn .5s linear;
+    -moz-animation:fadeIn .5s linear;
+    animation:fadeIn .5s linear;
+}
+
+img {
+	height: 150px;
+	width: 150px;
+	border-radius: 75px;
+	display: block;
+	margin: auto;
+	margin-top: 10px;
+}
+
+.disc {
+	-webkit-animation:fadeIn 1s linear;
+    -moz-animation:fadeIn 1s linear;
+    animation:fadeIn 1s linear;
+}
+
+.disc:hover {
+	-webkit-animation:spin 4s linear infinite;
+    -moz-animation:spin 4s linear infinite;
+    animation:spin 4s linear infinite;
+}
+
+.songDiv > div {
+	background: -webkit-linear-gradient(#faea3a, #de2048, #de2082, #de5a20);
+	width: 170px;
+	height: 170px;
+	border-radius: 85px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+div {
+	overflow: hidden;
+}
+
+.songDiv {
+	text-align: center;
+	height: 225px;
+	width: 225px;
+	color: white;
+	margin: 30px;
+	float: left;
+	overflow: hidden;
+}
+
+/*Spin Animation not used*/
+
+@-moz-keyframes spin { 
+	100% { -moz-transform: rotate(360deg); } 
+}
+@-webkit-keyframes spin { 
+	100% { -webkit-transform: rotate(360deg); } 
+}
+@keyframes spin { 
+	100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } 
+}
+
+/*
+ * FadeIn animation
+*/
+ 
+@-webkit-keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+@keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+.fadeIn {
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+}
+ 
+/*
+ * FadeOut animation
+*/
+ 
+@-webkit-keyframes fadeOut {
+    0% {opacity: 1;}
+    100% {opacity: 0;}
+}
+@keyframes fadeOut{
+    0% {opacity: 1;}
+    100% {opacity: 0;}
+}
+.fadeOut {
+    -webkit-animation-name: fadeOut;
+    animation-name: fadeOut;
+}
